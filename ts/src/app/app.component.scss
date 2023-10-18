@@ -14,11 +14,12 @@
 .header {
   grid-area: header;
   background-color: #fdf1eb;
+  padding: 0 2.68rem;
 }
 
 .main {
   grid-area: main;
-  padding: 20px;
+  padding: 2.68rem;
 }
 
 .main {
@@ -28,6 +29,7 @@
 
 .sidenav {
   grid-area: sidenav;
+  grid-row: 1/-1;
 }
 
 .sidebar {
@@ -36,6 +38,8 @@
 
 .footer {
   grid-area: footer;
+  margin-left: 1.25rem;
+  grid-row: 3/-1;
 }
 
 // sidenav
@@ -54,30 +58,38 @@
 .sidenav__title {
   color: #ffffff;
   padding: 1.37rem;
+  text-align: center;
 }
 
 .nav__item {
   padding: 14px 24px;
   border-bottom: 2px solid #e7e7e7;
+  position: relative;
+}
+
+.nav__item a {
   color: #725c5c;
 }
 
-.nav__item a:hover {
-  color: #725c5c;
-  transition: 0.2s;
-}
-
-.nav__item .active {
+.active {
   background-color: #fdf1eb;
+}
+
+.active a {
+  color: #725c5c;
 }
 
 .active:before {
   content: "";
   display: inline-block;
+  position: relative;
+  left: 0px;
+  top: 0;
   width: 5px;
-  height: 10px;
+  height: 100%;
   background: linear-gradient(
     rgba(255, 180, 85, 1) 0%,
     rgba(237, 120, 57, 1) 100%
   );
+  position: absolute;
 }
