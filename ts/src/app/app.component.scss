@@ -14,9 +14,10 @@
 .header {
   grid-area: header;
   background-color: #fdf1eb;
-  padding: 0.37rem 2.68rem;
+  padding: 0.3rem 2.68rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__description {
@@ -26,6 +27,17 @@
 .header__description h3 {
   font-size: 1.375rem;
   font-weight: 400;
+}
+
+.header__select {
+  padding: 0.5rem;
+  padding-left: 25px;
+  text-align: center;
+  background-color: transparent;
+  border: 3px solid #cccccc;
+  border-radius: 6px;
+  background: url(../assets/language.svg) no-repeat left;
+  background-position-y: center;
 }
 
 .main {
